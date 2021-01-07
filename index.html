@@ -15,8 +15,23 @@
   <p>A form using regular expressions</p>
 
   <form>
-    <input type='text' name='username' placeholder='username'>
-    <p>Username must be alphanumeric and contain 5/12 characters</p>
+    <h2>New User Signup</h2>
+    <div class='container'>
+      <input type='text' name='username' placeholder='username' />
+      <p>Username must be alphanumeric and contain 5 - 12 characters</p>
+
+      <input type='text' name='email' placeholder='email' />
+      <p>Email must be a valid address, i.e. me@mydomain.com</p>
+
+      <input type='text' name='password' placeholder='password' />
+      <p>Password must be alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+
+      <input type='text' name='telephone' placeholder='telephone'>
+      <p>Telephone number must be a valid UK telephone number (11 digits)</p>
+
+      <input type='text' name='slug' placeholder='profile slug'>
+      <p>Slug must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters</p>
+    </div>
   </form>
 
   <script src='app.js'></script>
