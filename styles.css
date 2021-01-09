@@ -99,11 +99,28 @@ input:focus {
   box-shadow: 0 0 5px #000;
 }
 
-P {
-  font-size: .9rem;
-  /* border: 1px solid red; */
-}
+
 .container {
   /* border: 1px solid blue; */
   margin: 20px;
+}
+
+/* VALIDATION STYLES */
+input.valid {
+  /* border-color: #36cc36; */
+  border: 3px solid #36cc36;
+}
+input.invalid {
+  /* border-color: ; */
+  border: 3px solid orange;
+}
+input + p {
+  font-size: .9rem;
+  /* color: orange; */
+  opacity: 0;
+  height: 0;
+}
+input.invalid + p {
+  opacity: 1;
+  height: auto;
 }
